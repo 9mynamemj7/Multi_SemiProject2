@@ -1,4 +1,4 @@
-# Multi_SemiProject2
+# Image Classification & Colorization
 
 ### 🐤 프로젝트 주제
 
@@ -10,4 +10,4 @@
     2. 이미지 전처리와 라벨링 (불량 데이터 정리, resize, 이미지별 라벨 입력)
     3. CNN 모델 생성
     4. 채색 모델 생성
-    5. 모델 겅증 및 확인
+    5. 모델 검증 및 확인
