@@ -132,3 +132,4 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+model/모델링_손그림인식시키기.ipynb
