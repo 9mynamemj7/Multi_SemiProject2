@@ -1,0 +1,84 @@
+
+<adam>
+moniter = accuracy
+batch_size=16
+- loss: 0.5722 - accuracy: 0.8578
+batch_size=32
+- loss: 0.6500 - accuracy: 0.8592
+
+moniter = loss
+batch_size=16
+- loss: 0.8446 - accuracy: 0.8057
+batch_size=32
+- loss: 0.6724 - accuracy: 0.8028 ( ※ val_loss값이 많이 흔들림 )
+
+moniter = val_accuracy
+batch_size=16
+- loss: 2.0547 - accuracy: 0.1611
+batch_size=32
+- loss: 0.7878 - accuracy: 0.7934
+
+moniter = val_loss
+batch_size=16
+- loss: 0.6094 - accuracy: 0.8863
+batch_size=32
+- loss: 0.9652 - accuracy: 0.8104 ( ※ val_loss값이 많이 흔들림 )
+
+===============================
+
+<RMS>
+moniter = accuracy
+batch_size=16
+- loss: 0.7274 - accuracy: 0.8341
+batch_size=32
+- loss: 0.7889 - accuracy: 0.7793
+
+moniter = loss
+batch_size=16
+- loss: 0.7407 - accuracy: 0.8199
+batch_size=32
+- loss: 0.8452 - accuracy: 0.7512
+
+moniter = val_accuracy
+batch_size=16
+- loss: 0.7912 - accuracy: 0.7820
+batch_size=32
+- loss: 0.8479 - accuracy: 0.7746
+
+moniter = val_loss
+batch_size=16
+- loss: 1.1105 - accuracy: 0.6730
+batch_size=32
+- loss: 0.8099 - accuracy: 0.7653
+===============================
+
+<SGD>
+
+moniter = accuracy
+batch_size=16
+- loss: 0.5187 - accuracy: 0.8389
+batch_size=32
+- loss: 0.5647 - accuracy: 0.8152
+
+moniter = loss
+batch_size=16
+- loss: 0.5499 - accuracy: 0.8294
+batch_size=32
+- loss: 0.7458 - accuracy: 0.8216
+
+moniter = val_accuracy
+batch_size=16
+- loss: 0.4886 - accuracy: 0.8436
+batch_size=32
+- loss: 0.7571 - accuracy: 0.8216 v
+
+moniter = val_loss
+batch_size=16
+- loss: 0.5367 - accuracy: 0.8341
+batch_size=32
+- loss: 0.9229 - accuracy: 0.6872
+
+
+
+
+
