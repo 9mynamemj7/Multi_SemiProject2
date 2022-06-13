@@ -2,6 +2,8 @@ MJ add
 *.jpg
 images/
 practice.ipynb
+*.docx
+*.h5
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
