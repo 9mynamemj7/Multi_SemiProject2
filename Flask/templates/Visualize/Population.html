@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block subtitle %}
+    <strong>택시 출발지 지도와 장애인 거주현황</strong>
+{% endblock %}
+{% block content %}
+    <div class="row">
+        <div class="col-12">
+            <DIV style ="text-align:center";>
+                <img src="{{url_for('static', filename='img/상위출발지.jpg')}}"  width="600" height="450">
+            </DIV>
+        </div>
+    </div>
+    <div class="row">
+        <div class = 'col-1'></div>
+        <div class = 'col-12'>
+            <DIV style ="text-align:center";>
+                <p> <strong>지도 : </strong> 장애인 콜택시 출발지 단계구분도 </p>
+                <p> <strong>버퍼 : </strong> 장애인 인구 분포 구별 상위 지역</p>
+            </DIV>
+        </div>
+    </div>
+{% endblock %}

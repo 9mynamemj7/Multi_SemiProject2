@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block subtitle %}
+    <strong>택시 이동</strong>
+{% endblock %}
+{% block content %}
+    <div class="row">
+        <div class="col-12">
+            <DIV style ="text-align:center";>
+            <img src="{{url_for('static', filename='img/택시이동경로.jpg')}}">
+            </DIV>
+        </div>
+    </div>
+    <div class="row">
+        <div class = 'col-12'>
+            <DIV style ="text-align:center";>
+            <p> <strong> 차량번호: </strong> 8279 </p>
+            <p> <strong>조회 날짜: </strong>2021-04-20 </p>
+            <p> <strong>빨간색 원: </strong>차고지 위치 </p>
+            <p> <strong>자동차 아이콘: </strong>출발지점 위치 </p>
+            <p> <strong>초록색 아이콘(i): </strong>목적지 위치 </p>
+            <p> <strong>라인: </strong>초록색 - 처음 출발 / 파란색 - 나머지 </p>
+            <p> ---- </p>
+            </DIV>
+        </div>
+    </div>
+{% endblock %}

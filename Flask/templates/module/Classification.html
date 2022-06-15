@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% block subtitle %}
+    <strong>포켓몬스터 캐릭터 분류</strong>
+{% endblock %}
+{% block content %}
+    <div class="row">
+        <div class="col-12">
+            <DIV style="text-align:center;">
+                <img src="{{url_for('static', filename='img/오박사.jpg')}}"  width="180" height="300">
+                <dev class = 'row'></dev>
+                <td><label style="text-align:center;">
+                손그림을 인식해서 캐릭터를 <strong>분류</strong>할걸세!<br>
+                이미지를 업로드하게!<br>
+                회색 이미지는 꼭 다운받아주게</label></td>
+            </DIV>
+        </div>
+
+        <div class="col-1"></div>
+
+        <div class="col-12">
+            <form action="/Classification" method="post" enctype = "multipart/form-data">
+                <table class="table table-borderless">
+                    <tr> <td colspan="2" style="text-align: center;">
+                            <input type="file" name='file' class="real-upload" accept="image/*" required multiple>
+                            <br> {% if f_name %} <p>제출 성공</p> {% endif %}
+                        </td> </tr>
+                    <td colspan="2" style="text-align: center;">
+                        <button type="submit" class="btn btn-outline-primary mr-2 " style="color:#4472C4; background-color: #DEEBF7">Go!</button>
+                        <button type="reset" class="btn btn-secondary"style="color:#383838; background-color: #C9c9c9">Reset</button>
+                    </td>
+                </table>
+            </form>
+        </div>
+        <div class="col-2"></div>
+    </div>
+{% endblock %}

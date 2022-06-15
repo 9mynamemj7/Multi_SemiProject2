@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% block subtitle %}
+    <strong>손그림에 음영 추가</strong>
+{% endblock %}
+{% block content %}
+    <div class="row">
+        <div class="col-12">
+            <DIV style="text-align:center;">
+                <img src="{{url_for('static', filename='img/오박사2.jpg')}}"  width="550" height="300">
+                <td><label style="text-align:center;"><br>
+                이번에는 손그림에 <strong>음영</strong>을 입혀볼걸세!<br>
+                다시 이미지를 업로드하게!</label></td>
+            </DIV>
+        </div>
+
+        <div class="col-1"></div>
+
+        <div class="col-12">
+            <form action="/Gray" method="post" enctype = "multipart/form-data">
+                <table class="table table-borderless">
+                    <tr> <td colspan="2" style="text-align: center;">
+                            <input type="file" name='file' class="real-upload" accept="image/*" required multiple>
+                            <br> {% if f_name %} <p>제출 성공</p> {% endif %}
+                        </td> </tr>
+                    <td colspan="2" style="text-align: center;">
+                        <button type="submit" class="btn btn-outline-primary mr-2 " style="color:#4472C4; background-color: #DEEBF7">Go!</button>
+                        <button type="reset" class="btn btn-secondary"style="color:#383838; background-color: #C9c9c9">Reset</button>
+                    </td>
+                </table>
+            </form>
+        </div>
+        <div class="col-2"></div>
+    </div>
+{% endblock %}
