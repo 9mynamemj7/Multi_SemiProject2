@@ -1,0 +1,1 @@
+![partial_model_diagram (1)](https://user-images.githubusercontent.com/102013100/174000319-ae708de6-9baf-4a1e-8629-25202c5aab22.png)
