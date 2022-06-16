@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, send_file
 from flask_ngrok import run_with_ngrok
 import os, cv2, time, warnings, math
 from tensorflow.keras.models import load_model
@@ -167,8 +167,18 @@ def Coloring():
         # GAN 이미지 & 채색 결과 함께 출력
         fname = fname.split('/')[-1]
         plt.imsave('./static/img/Coloring/'+fname, GAN_preds_rgb[0])
-
         return render_template('module/Coloring_res.html', menu=menu, img_file='/img/Coloring/'+fname, pname=pname)
+
+@app.route('/fileDown', methods = ['GET', 'POST'])
+def fileDown():
+    if request.method == 'GET':
+        fname = request.args.get('fname')
+        fname = fname[:-1]
+        path = "static"
+        print('fileDown: ',fname)
+        file = fname.split('/')[-1]
+
+        return send_file(path+fname, attachment_filename=file, as_attachment=True)
 
 # if __name__ == '__main__':
 #     app.run(host='0.0.0.0', debug=True)

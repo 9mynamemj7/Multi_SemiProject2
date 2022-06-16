@@ -15,10 +15,17 @@
         </div>
     </div>
 
-    <div class="col-12" style="text-align: center;">
-        <td colspan="2" style="text-align: center;">
-            <button class="btn btn-secondary" style="color:#383838; background-color: #C9c9c9"
-                    onclick="location.href='/Classification'">Restart</button>
-        </td>
-    </div>
+    <form action="/fileDown" method="get" enctype = "multipart/form-data">
+        <table class="table table-borderless">
+            <tr> <td colspan="2" style="text-align: center;">
+                    <input type="hidden" name='fname' value={{img_file}}/>
+                </td> </tr>
+            <td colspan="2" style="text-align: center;">
+                <button type="submit" class="btn btn-outline-primary mr-2 " style="color:#4472C4; background-color: #DEEBF7"
+                onclick="location.href='/fileDown?fname={{img_file}}'">
+                Download</button>
+            </td>
+        </table>
+    </form>
+
 {% endblock %}

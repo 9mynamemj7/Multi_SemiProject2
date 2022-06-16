@@ -7,19 +7,7 @@
     <list default="true" id="c5d43871-4cf2-4c91-a4e1-dd983babcc3f" name="변경" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/Visualize/Population.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/Visualize/Taxi_move.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/model1/K_Means.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/model1/hist.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/model1/m2_time.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/model1/m2_time_res.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/module/Classification.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/module/Classification.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/module/Classification_res.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/module/Classification_res.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/module/Gray.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/module/Gray.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/module/Gray_res.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/module/Gray_res.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/spinner.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/spinner.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/다운로드.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/module/Coloring_res.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/module/Coloring_res.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
