@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% block subtitle %}
+    <strong>최종 색칠하기</strong>
+{% endblock %}
+{% block content %}
+    <div class="row">
+        <div class="col-12">
+            <DIV style="text-align:center;">
+                <img src="{{url_for('static', filename='img/오박사3.jpg')}}"  width="450" height="300">
+                <div class="row"></div>
+                <td><label style="text-align:center;"><br>
+                    <h5>이제 마지막일세~ <br>아까 전의 회색조 그림에<br>
+                        <strong>색칠</strong>을 해보겠네!<br></h5></label></td>
+            </DIV>
+        </div>
+
+        <div class="col-1"></div>
+
+        <div class="col-12">
+            <form action="/Coloring" method="post" enctype = "multipart/form-data">
+                <table class="table table-borderless">
+                    <tr> <td colspan="2" style="text-align: center;">
+                            <input type="hidden" name='pname' value={{pname}}/>
+                            <input type="hidden" name='fname' value={{fname}}/>
+                            </td> </tr>
+                    <td colspan="2" style="text-align: center;">
+                        <button type="submit" class="btn btn-outline-primary mr-2 " style="color:#4472C4; background-color: #DEEBF7">Go!</button>
+                    </td>
+                </table>
+            </form>
+        </div>
+        <div class="col-2"></div>
+    </div>
+{% endblock %}

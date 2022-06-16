@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block subtitle %}
+    <strong>포켓몬스터 음영 색칠 결과(GAN)</strong>
+{% endblock %}
+{% block content %}
+    <div class="row">
+        <div class="col-12">
+            <DIV style="text-align:center;">
+                <img src="{{ url_for('static', filename=img_file) }}" height="200">
+                <div class="row"></div>
+                <td><label style="text-align:center;"><br>
+                <h5>분류 결과<strong>({{pname}})</strong>를
+                    <div class="row mt-1"/>기준으로 음영을 넣어보았네!</h5></label></td>
+            </DIV>
+            <form action="/Coloring" method="get" enctype = "multipart/form-data">
+                <table class="table table-borderless">
+                    <tr> <td colspan="2" style="text-align: center;">
+                            <input type="hidden" name='fname' value={{img_file}}>
+                            <input type="hidden" name='pname' value={{pname}}>
+                        </td> </tr>
+                    <td colspan="2" style="text-align: center;">
+                        <button type="submit" class="btn btn-outline-primary mr-2 " style="color:#4472C4; background-color: #DEEBF7">
+                        Next!</button>
+                    </td>
+                </table>
+            </form>
+        </div>
+        <div class="col-3"></div>
+    </div>
+{% endblock %}

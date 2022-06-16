@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% block subtitle %}
+    <strong>포켓몬스터 손그림 분류 결과</strong>
+{% endblock %}
+{% block content %}
+    <div class="row">
+        <div class="col-12">
+            <DIV style="text-align:center;">
+                <img src="{{ url_for('static', filename=img_file) }}" height="300">
+                <div class="row"></div>
+            </DIV>
+            <table class="table table-striped">
+                <tr>
+                    <td style="text-align: center;"><strong>캐릭터</strong></td>
+                    <td style="text-align: center;"><strong>확률</strong></td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;"><strong>{{res.poketmon}} </strong></td>
+                    <td style="text-align: center;"><strong>{{res.prob}} </strong></td>
+                </tr>
+            </table>
+
+<!--            <form action="/Gray" method="post" enctype = "multipart/form-data">-->
+                <table class="table table-borderless">
+<!--                    <tr> <td colspan="2" style="text-align: center;">-->
+<!--                            <input type="hidden" name='pname' value={{res.poketmon}}>-->
+<!--                            <input type="hidden" name='fname' value={{img_file}}>-->
+<!--                        </td> </tr>-->
+                    <td colspan="2" style="text-align: center;">
+                        <button class="btn btn-outline-primary mr-2 " style="color:#4472C4; background-color: #DEEBF7"
+                                onclick="location.href='/Gray?pname={{res.poketmon}}&fname={{img_file}}'">Go!</button>
+
+                        <button class="btn btn-secondary" style="color:#383838; background-color: #C9c9c9"
+                                onclick="location.href='/Classification'">Reload</button>
+                    </td>
+                </table>
+<!--            </form>-->
+
+        </div>
+        <div class="col-3"></div>
+    </div>
+{% endblock %}
