@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block subtitle %}
+    <strong>포켓몬스터 음영 색칠 결과(GAN)</strong>
+{% endblock %}
+{% block content %}
+    <div class="row">
+        <div class="col-12">
+            <DIV style="text-align:center;">
+                <img src="{{ url_for('static', filename=img_file) }}" height="200">
+                <div class="row"></div>
+                <td><label style="text-align:center;"><br>
+                <h5><strong>({{pname}})</strong>색감의<div class="row mt-1"/>
+                    손그림<strong> 완성</strong>이네!!</h5></label></td>
+            </DIV>
+        </div>
+    </div>
+
+    <div class="col-12" style="text-align: center;">
+        <td colspan="2" style="text-align: center;">
+            <button class="btn btn-secondary" style="color:#383838; background-color: #C9c9c9"
+                    onclick="location.href='/Classification'">Restart</button>
+        </td>
+    </div>
+{% endblock %}
