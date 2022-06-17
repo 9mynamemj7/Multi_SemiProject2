@@ -1,10 +1,10 @@
 MJ add
-*.jpg
 images/
 practice.ipynb
 *.docx
 *.h5
-
+img/
+data/
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
